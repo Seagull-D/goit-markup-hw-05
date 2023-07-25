@@ -433,7 +433,7 @@
             <label class="label-subescribe">
               <input
                 class="subescribe-inbut"
-                type="text"
+                type="mail"
                 name="subescrine-inpt"
                 placeholder="E-mail"
               />
@@ -459,14 +459,20 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-inputs">
           <div class="input-container">
-            <label class="laben-input" for="name">Name</label>
+            <label class="laben-input" for="user-name">Name</label>
             <div class="name-input">
-              <input class="input-modal" name="name" id="name" type="text" />
+              <input
+                class="input-modal"
+                name="name"
+                id="user-name"
+                type="text"
+              />
               <svg class="name-icon-svg" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
-
+          </div>
+          <div class="input-container">
             <label class="laben-input" for="telephone">Phone</label>
             <div class="name-input">
               <input
@@ -475,11 +481,12 @@
                 id="telephone"
                 type="tel"
               />
-              <svg class="name-icon-svg" width="18" height="18">
+              <svg class="name-icon-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
-
+          </div>
+          <div class="input-container">
             <label class="laben-input" for="email">Email</label>
             <div class="name-input">
               <input class="input-modal" name="email" id="email" type="email" />
@@ -487,11 +494,13 @@
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
-            <label class="laben-input" for="user-text">Comment</label>
+          </div>
+          <div class="textarea-container">
+            <label class="laben-input" for="user-comment">Comment</label>
             <textarea
               class="user-text"
               name="modal-text"
-              id="user-text"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -499,10 +508,10 @@
             <input
               class="user-check visually-hidden"
               type="checkbox"
-              id="check"
+              id="user-privacy"
               value="one"
             />
-            <label class="check-block" for="check">
+            <label class="check-block" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="check-icon" width="8" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use>
@@ -511,7 +520,7 @@
               <a class="polisy-link" href="#">Privacy Policy</a>
             </label>
           </div>
-          <button class="submit-button" type="button">Send</button>
+          <button class="submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
